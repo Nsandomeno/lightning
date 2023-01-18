@@ -73,6 +73,10 @@ you've configured your node to expose the developer options, e.g.
 ./configure --enable-developer
 ```
 
+### Permissions Note 
+When running make install there are a series of directories generated in `/usr/local/share/c-lightning/`
+and `/usr/local/libexec/c-lightning/`... Make sure the permissions are set properly on these 
+directories prior to running in production.
 #### Mainnet Option
 To test with real bitcoin,  you will need to have a local `bitcoind` node running:
 
